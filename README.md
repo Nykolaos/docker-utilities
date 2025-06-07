@@ -6,7 +6,7 @@ This repository contains a collection of Docker utilities and network configurat
 
 The repository is organized into the following main components:
 
-- **Network**: Network configuration files and documentation for setting up subnets and managing network topology. [View Network Documentation](network/README.md)
+- **Network**: Network configuration files and documentation for setting up subnets and managing network topology.
 
 ## Features
 
