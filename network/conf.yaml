@@ -1,0 +1,20 @@
+# Docker Network Configuration File
+# Read by create_docker_networks.sh using yq
+
+networks:
+  # --- Example Networks ---
+  # Required: name and type
+  # Required For Macvlan: parent_interface
+  # Optional: subnet, gateway, ip_range, host_interface, allowed_networks
+  - name: mynet 
+    type: bridge
+    parent_interface: "eth0"
+    subnet: "172.25.0.0/24"
+    gateway: "172.25.0.1"
+    ip_range: "172.25.0.1/24"
+    host_interface: "db_br0"
+    allowed_networks:
+      - net1
+      - net2
+
+
